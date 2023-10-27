@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/utilities.css" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Post One</title>
+  </head>
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="text-primary"
+            ><i class="fas fa-book-open"></i> Harmony</span
+          >Financial
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#cases">Cases</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>Blog</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="post">
+        <h2>Blog Post One</h2>
+        <p class="meta">
+          <i class="fas fa-user"></i>Posted by <strong>John Doe</strong> | June
+          09 2023
+        </p>
+        <img src="./Img/blog/blog1.jpg" alt="" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eos
+          qui totam praesentium odio saepe incidunt? Incidunt, assumenda velit
+          est a adipisci culpa qui laborum error deserunt, voluptate dolor
+          tempore!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          neque autem dolore molestiae quidem expedita deserunt sed ipsa, itaque
+          magni nam quisquam, aliquam magnam voluptatibus quasi quam ducimus
+          beatae libero facere. Recusandae architecto, omnis officiis odio cum
+          a, illum illo neque qui ad accusantium. Quo dolores, provident
+          repudiandae vitae dolorum in corporis eaque, sunt quas error ducimus,
+          dicta aliquid temporibus?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+          corrupti assumenda iure quam, exercitationem repellat enim tempore
+          temporibus error sunt eaque, magnam nesciunt excepturi. Quos possimus
+          in odit ratione cum repudiandae, magni magnam modi nemo explicabo
+          libero accusantium doloribus ad ipsam dolorum doloremque voluptatem
+          quidem error eveniet? Accusantium, corrupti? Illo!
+        </p>
+      </section>
+    </main>
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"> </i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"> </i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"> </i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"> </i></a>
+      </div>
+      <p>Copyright &copy; 2023 - HarmonyFinancial</p>
+    </footer>
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }),
+            200;
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>
